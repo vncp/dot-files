@@ -60,6 +60,9 @@ call plug#end()
 
 "" BELOW ARE BINDINGS 
 
+" AUTO CLOSE TAG:
+iabbrev </ </<C-X><C-O>
+
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
@@ -116,6 +119,7 @@ let g:codi#aliases = {
 colorscheme nord
 
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent
+set smartindent
 set encoding=utf-8
 
 " Out of Sync Fix for Syntax Highlighting on large files
@@ -266,3 +270,7 @@ nnoremap <silent> <C-h> :call WinMove('h')<CR>
 nnoremap <silent> <C-j> :call WinMove('j')<CR>
 nnoremap <silent> <C-k> :call WinMove('k')<CR>
 nnoremap <silent> <C-l> :call WinMove('l')<CR>
+
+autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<CR>
+autocmd filetype c nnoremap <F4> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
