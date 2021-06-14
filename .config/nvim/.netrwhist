@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
-let g:netrw_dirhist_5='/home/vpham/Projects/Portfolio/components'
-let g:netrw_dirhist_4='/home/vpham/Projects/Portfolio/.github/workflows'
-let g:netrw_dirhist_3='/home/vpham/Projects/Portfolio/.github'
-let g:netrw_dirhist_2='/home/vpham/Projects/Portfolio'
-let g:netrw_dirhist_1='/home/vpham/Projects/Portfolio/components'

@@ -1,6 +1,5 @@
 {
   "python.jediEnabled": false,
-  "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
@@ -13,7 +12,6 @@
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
-  "prettier.disableSuccessMessage": true,
   "languageserver": {
     "ccls": {
       "command": "ccls",
