@@ -42,13 +42,12 @@ telescope.setup {
 
 telescope.load_extension("file_browser")
 
-vim.keymap.set('n', ';f',
-  function()
-    builtin.find_files({
-      no_ignore = false,
-      hidden = true
-    })
-  end)
+vim.keymap.set('n', ';f', function()
+  builtin.find_files({
+    no_ignore = false,
+    hidden = true
+  })
+end)
 vim.keymap.set('n', ';F', ":Telescope file_browser<CR>", { noremap = true })
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
@@ -76,4 +75,7 @@ vim.keymap.set("n", "sf", function()
     initial_mode = "normal",
     layout_config = { height = 40 }
   })
+end)
+vim.keymap.set('n', ';s', function()
+  builtin.lsp_document_symbols()
 end)

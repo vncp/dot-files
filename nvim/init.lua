@@ -15,3 +15,6 @@ if is_win then
   require('craftzdog.windows')
 end
 
+vim.cmd('source C:\\Users\\vincentpham\\AppData\\Local\\nvim\\neovide.vim')
+
+vim.cmd('highlight LineNr ctermbg=black')

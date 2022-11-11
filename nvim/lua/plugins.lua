@@ -40,6 +40,27 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim'
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
+  use 'L3MON4D3/LuaSnip'
+  use {
+    'jose-elias-alvarez/null-ls.nvim',
+    disable = true
+  }
+  use {
+    'MunifTanjim/prettier.nvim',
+    disable = true
+  }
+  use 'lukas-reineke/headlines.nvim'
+  use {
+    'github/copilot.vim',
+    disable = true
+  }
+  use 'folke/which-key.nvim'
+  use 'folke/trouble.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'folke/zen-mode.nvim'
+  use 'folke/twilight.nvim'
+  use 'tpope/vim-surround'
+  use 'nvim-tree/nvim-tree.lua'
 end)
 
 vim.cmd [[colorscheme nord]]
